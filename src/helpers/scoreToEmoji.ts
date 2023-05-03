@@ -12,7 +12,8 @@ export function scoreToEmoji(guesses: GuessType[]): string {
     empty: "⬛️",
   };
   // const todaysDate = new Date();
-  const prefix = `HeardleTemplate - #${index} 🎧`;
+  const prefix = `Taylor Swift Heardle - #${index} 🎧`;
+  const url = `https://swifty-heardle.glitch.me`;
 
   let scoreEmoji = "";
 
@@ -28,5 +29,5 @@ export function scoreToEmoji(guesses: GuessType[]): string {
     }
   });
 
-  return `${prefix} ${scoreEmoji}`;
+  return `${prefix} ${scoreEmoji} ${url}`;
 }
