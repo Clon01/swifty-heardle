@@ -1,3 +1,5 @@
+import { useWiggle } from "../hooks/wiggle";
+import { animated } from "react-spring";
 import * as React from "react";
 /* ADD IMPORTS FROM TODO ON THE NEXT LINE */
 
@@ -8,16 +10,15 @@ import * as React from "react";
 */
 
 export default function About() {
-  /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
+  
+  const [style, trigger] = useWiggle({ x: 50, rotation: 1, scale: 1.2 });
   
   return (
     <div className="page">
-      {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}
-      <h1 className="title">
-        About this site
-      </h1>
-      {/* REPLACE OPENING P TAG BELOW WITH CODE FROM TODO */}
-      <p>
+      <animated.h1 className="title" style={style}>
+       About this site
+      </animated.h1>
+      <p onMouseEnter={trigger}>
         Welcome to the Glitch React starter, where you can instantly create a
         React site that's fully customizable.
       </p>
