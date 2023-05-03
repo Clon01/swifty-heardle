@@ -40,9 +40,12 @@ export const Input = styled.input`
   background-color: transparent;
   border: none;
   outline: none !important;
-
   color: ${({ theme }) => theme.text};
   font-size: 1rem;
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: ${({ theme }) => theme.text};
+    opacity: 1; /* Firefox */
+  }
 `;
 
 export const ResultsContainer = styled.div`
