@@ -11,6 +11,8 @@ import { todaysSolution } from "./helpers";
 import { Header, InfoPopUp, Game, Footer } from "./components";
 
 import * as Styled from "./app.styled";
+import Seo from './components/seo.jsx';
+
 
 function App() {
   const initialGuess = {
