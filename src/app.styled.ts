@@ -5,6 +5,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     width: 90%;
+    max-width: 300px;
   }
 
   max-width: 600px;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +19,7 @@ export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   width: 40%;
 
@@ -43,6 +44,9 @@ export const Logo = styled.h1`
   font-family: "Roboto Serif", serif;
   text-transform: uppercase;
   width: max-content;
+  @media (max-width: 768px) {
+    font-size:16px;
+  }
 
   -webkit-touch-callout: none;
   user-select: none;
