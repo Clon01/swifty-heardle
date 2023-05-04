@@ -36,7 +36,6 @@ export function Result({
 
   const isMobile = navigator.userAgentData.mobile;
 
-  
   if (didGuess) {
     const copyResult = React.useCallback(() => {
       navigator.clipboard.writeText(scoreToEmoji(guesses));
@@ -46,30 +45,33 @@ export function Result({
       <>
         <Styled.ResultTitle>{textForTry[currentTry - 1]}</Styled.ResultTitle>
         <Styled.SongTitle>
-          Todays song is {todaysSolution.artist} -{" "}
-          {todaysSolution.name}
+          Todays song is {todaysSolution.artist} - {todaysSolution.name}
         </Styled.SongTitle>
         <Styled.Tries>
-          You guessed it in {currentTry} {currentTry === 1 ? 'try' : 'tries'}
+          You guessed it in {currentTry} {currentTry === 1 ? "try" : "tries"}
         </Styled.Tries>
         <YouTube id={todaysSolution.youtubeId} />
-        { !isMobile &&
-        <Button onClick={copyResult} variant="green">
-          Copy results
-        </Button> }
-        { isMobile &&
-        <RWebShare
-        data={{
+        {!isMobile && (
+          <Button onClick={copyResult} variant="green">
+            Copy results
+          </Button>
+        )}
+        {isMobile && (
+          <RWebShare
+            data={{
               text: scoreToEmoji(guesses),
               url: "https://clammy-solstice-myth.glitch.me",
               title: "Taylor Swift Heardle",
             }}
             onClick={() => console.log("shared successfully!")}
           >
-          <button>Share <IoShareSocialOutline/></button>
-        </RWebShare>}
+            <button>
+              Share <IoShareSocialOutline />
+            </button>
+          </RWebShare>
+        )}
         <Styled.TimeToNext>
-          Remember to come back in {hoursToNextDay}{" "} hours!
+          Remember to come back in {hoursToNextDay} hours!
         </Styled.TimeToNext>
       </>
     );
@@ -78,12 +80,11 @@ export function Result({
       <>
         <Styled.ResultTitle>Unfortunately, thats wrong</Styled.ResultTitle>
         <Styled.SongTitle>
-          Todays song is {todaysSolution.artist} -{" "}
-          {todaysSolution.name}
+          Todays song is {todaysSolution.artist} - {todaysSolution.name}
         </Styled.SongTitle>
         <YouTube id={todaysSolution.youtubeId} />
         <Styled.TimeToNext>
-          Try again in {hoursToNextDay}{" "} hours
+          Try again in {hoursToNextDay} hours
         </Styled.TimeToNext>
       </>
     );
