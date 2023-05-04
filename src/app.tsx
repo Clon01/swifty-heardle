@@ -144,7 +144,7 @@ function App() {
   }, [guesses, selectedSong]);
 
   return (
-    <>
+    <Styled.Container>
     <Seo />
     <main>
       <Header openInfoPopUp={openInfoPopUp} />
@@ -162,7 +162,7 @@ function App() {
       </Styled.Container>
       <Footer />
     </main>
-    </>
+    </Styled.Container>
   );
 }
 
