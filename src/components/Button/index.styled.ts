@@ -7,6 +7,11 @@ export const Button = styled.button<{ variant?: keyof typeof theme }>`
 
   border-radius: 5px;
   border: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
 
   color: ${({ theme }) => theme.text};
   font-size: 1rem;

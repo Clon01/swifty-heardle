@@ -34,7 +34,7 @@ export function Result({
 
   const textForTry = ["Wow!", "Super!", "Congrats!", "Nice!"];
 
-  const isMobile = navigator.userAgentData.mobile;
+  const isMobile = typeof screen.orientation === 'undefined'
 
   if (didGuess) {
     const copyResult = React.useCallback(() => {
@@ -60,14 +60,14 @@ export function Result({
           <RWebShare
             data={{
               text: scoreToEmoji(guesses),
-              url: "https://clammy-solstice-myth.glitch.me",
+              url: "https://swifty-heardle.glitch.me",
               title: "Taylor Swift Heardle",
             }}
             onClick={() => console.log("shared successfully!")}
           >
-            <button>
+            <Button variant="green">
               Share <IoShareSocialOutline />
-            </button>
+            </Button>
           </RWebShare>
         )}
         <Styled.TimeToNext>
