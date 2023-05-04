@@ -1,5 +1,6 @@
 import React from "react";
 import { IoHeart } from "react-icons/io5";
+import { Link } from "wouter";
 
 import * as Styled from "./index.styled";
 

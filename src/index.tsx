@@ -1,6 +1,6 @@
 import { initialize } from "react-ga";
 
-const TRACKING_ID = "INSERT-YOUR-ID-HERE";
+const TRACKING_ID = "G-2TKQDBFPL5";
 initialize(TRACKING_ID);
 import { HelmetProvider } from 'react-helmet-async';
 import React from "react";
