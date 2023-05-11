@@ -8,8 +8,8 @@ export function scoreToEmoji(guesses: GuessType[]): string {
   const emojis = {
     incorrect: "🟥",
     correct: "🟩",
-    skip: "⬜",
-    empty: "⬛️",
+    empty: "⬜",
+    skip: "⬛️",
   };
   // const todaysDate = new Date();
   const prefix = `Taylor Swift Heardle - #${index} 🎧`;
