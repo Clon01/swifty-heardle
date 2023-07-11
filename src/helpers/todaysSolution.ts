@@ -7,6 +7,6 @@ import { songs } from "../constants";
 const msInDay = 86400000;
 const startDate = new Date('4/15/2022');
 const todaysDate = new Date();
-const index = Math.floor(Math.abs(Math.sin(Math.floor((todaysDate.getTime() - startDate.getTime() )/msInDay))*(10**3));
+const index = Math.floor(Math.abs(Math.sin(Math.floor((todaysDate.getTime() - startDate.getTime() )/msInDay))*(10**3)));
 
 export const todaysSolution = songs[index % songs.length];
