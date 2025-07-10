@@ -48,7 +48,7 @@ export function ResultFooter({
         <RWebShare
           data={{
             text: scoreToEmoji(guesses),
-            url: "https://swifty-heardle.glitch.me",
+            url: "https://clon01.github.io/swifty-heardle/",
             title: "Taylor Swift Heardle",
           }}
           onClick={() => console.log("shared successfully!")}
