@@ -101,7 +101,7 @@ function App() {
       return newGuesses;
     });
 
-    setCurrentTry((currentTry) => currentTry + 1);
+    setCurrentTry((currentTry:number) => currentTry + 1);
 
     event({
       category: "Game",
@@ -128,7 +128,7 @@ function App() {
       return newGuesses;
     });
 
-    setCurrentTry((currentTry) => currentTry + 1);
+    setCurrentTry((currentTry:number) => currentTry + 1);
     setSelectedSong(undefined);
 
     if (isCorrect) {
