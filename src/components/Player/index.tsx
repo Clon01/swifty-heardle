@@ -42,6 +42,7 @@ export function Player({ id, currentTry }: Props) {
 
   React.useEffect(() => {
     if (play) {
+      console.log("id:", playerRef.current.internalPlayer.getVideoEmbedCode());
       if (currentTime * 1000 >= currentPlayTime) {
         playerRef.current?.internalPlayer.pauseVideo();
         playerRef.current?.internalPlayer.seekTo(0);
@@ -60,9 +61,10 @@ export function Player({ id, currentTry }: Props) {
     });
   }, []);
 
-  const setReady = React.useCallback((event: YouTubeEvent) => {
-    // console.log("setReady", event.target.options.videoId == id);
-    setIsReady(event.target.options.videoId == id);
+  const setReady = React.useCallback(async (event: YouTubeEvent) => {
+    const videoId = await playerRef.current.internalPlayer.getVideoEmbedCode()
+    console.log("setReady", videoId.toString().includes(id));
+    setIsReady(true);
   }, []);
 
   return (
