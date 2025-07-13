@@ -1,5 +1,5 @@
 import React from "react";
-import YouTube from "react-youtube";
+import YouTube, {YouTubeEvent} from "react-youtube";
 import { IoPlay } from "react-icons/io5";
 import { event } from "react-ga";
 
@@ -60,8 +60,9 @@ export function Player({ id, currentTry }: Props) {
     });
   }, []);
 
-  const setReady = React.useCallback(() => {
-    setIsReady(true);
+  const setReady = React.useCallback((event: YouTubeEvent) => {
+    // console.log("setReady", event.target.options.videoId == id);
+    setIsReady(event.target.options.videoId == id);
   }, []);
 
   return (
