@@ -13,7 +13,7 @@ export function scoreToEmoji(guesses: GuessType[]): string {
   };
   // const todaysDate = new Date();
   const prefix = `Taylor Swift Heardle - #${index} 🎧`;
-  const url = `https://swifty-heardle.glitch.me`;
+  const url = `https://clon01.github.io/swifty-heardle/`;
 
   let scoreEmoji = "";
 
