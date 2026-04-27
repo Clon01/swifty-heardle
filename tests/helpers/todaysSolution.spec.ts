@@ -11,11 +11,11 @@ const pseudoRandomSolutions: daySolution[] = [
         "name": "All Of The Girls You Loved Before",
         "youtubeId": "HO-31CVnLes",}],
     [10, {"artist": "Taylor Swift",
-        "name": "Come In With The Rain (Taylor's Version)",
-        "youtubeId": "ePjcjLRHPOo",}],
+        "name": "coney island ft. The National",
+        "youtubeId": "c_p_TBaHvos",}],
     [100, {"artist": "Taylor Swift",
-        "name": "The Very First Night (Taylor's Version) (From The Vault)",
-        "youtubeId": "rVuyi-dPMIc",}],
+        "name": "I Think He Knows",
+        "youtubeId": "2d1wKn-oJnA",}],
 ];
 
 describe("todaySolution", () => {
