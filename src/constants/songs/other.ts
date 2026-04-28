@@ -21,4 +21,9 @@ export const songs: Song[] = [
         "name": "Beautiful Ghosts",
         "youtubeId": "trIjpVH8h88"
     },
+    {
+        "artist": "Taylor Swift",
+        "name": "Carolina (From The Motion Picture “Where The Crawdads Sing”",
+        "youtubeId": "egxyRSb_XtI"
+    },
 ]
