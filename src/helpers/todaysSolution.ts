@@ -18,3 +18,8 @@ export function solutionForDate(date: Date): Song {
     const index = Math.floor(Math.abs(Math.sin(Math.floor((date.getTime() - startDate.getTime()) / msInDay)) * (10 ** 3)));
     return songs[index % songs.length];
 }
+
+export function solutionForDay(day: number, songs: Song[]): Song {
+    const index = Math.floor(Math.abs(Math.sin(Math.floor(day -1))* (10 ** 3)));
+    return songs[index % songs.length];
+}
