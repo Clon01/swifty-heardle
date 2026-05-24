@@ -1,5 +1,6 @@
 import React from "react";
 import { IoInformationCircleOutline } from "react-icons/io5";
+import { index} from "../../helpers/todaysSolution";
 
 import * as Styled from "./index.styled";
 
