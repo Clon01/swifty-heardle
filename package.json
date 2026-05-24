@@ -2,12 +2,19 @@
   "name": "taylor-swift-heardle",
   "version": "0.0.5",
   "description": "A simple React single page app, built with Vite and React.",
+  "type": "module",
+  "ts-node": {
+    "esm": true,
+    "experimentalEsm": true
+  },
   "scripts": {
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview",
     "test": "vitest",
     "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "generateSolution": "tsx src/scripts/solutionGenerator.ts",
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.0.0",
@@ -30,6 +37,8 @@
     "@testing-library/user-event": "^14.6.1",
     "gh-pages": "^6.3.0",
     "jsdom": "^26.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.3",
     "vite": "^4.0.0",
     "vitest": "^3.2.4"
   },
