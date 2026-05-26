@@ -12,7 +12,7 @@ const todaysDate = new Date();
 export const index = Math.floor((todaysDate.getTime() - startDate.getTime() )/msInDay) + 1;
 
 
-export const todaysSolution = solutions[index];
+export const todaysSolution = solutions[index] as Song;
 
 
 export function solutionForDate(date: Date): Song {

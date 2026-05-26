@@ -110,7 +110,7 @@ function App() {
   }, [currentTry]);
 
   const guess = React.useCallback(() => {
-    const isCorrect = selectedSong === todaysSolution;
+    const isCorrect = selectedSong.youtubeId === todaysSolution.youtubeId;
 
     if (!selectedSong) {
       alert("Choose a song");
