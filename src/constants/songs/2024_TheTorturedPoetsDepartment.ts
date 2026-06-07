@@ -141,9 +141,4 @@ export const songs: Song[] = [
         "name": "The Manuscript",
         "youtubeId": "iY6Qhlua8Zw"
     },
-    {
-        "artist": "Taylor Swift",
-        "name": "The Manuscript",
-        "youtubeId": "iY6Qhlua8Zw"
-    },
 ]
