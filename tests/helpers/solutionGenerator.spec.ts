@@ -92,7 +92,7 @@ describe("solutionStore", () => {
         solutionStore(startDay, songs);
 
         expect(writeFile).toHaveBeenCalledWith(
-            expect.stringContaining("1523-1763.json"),
+            expect.stringContaining("solutions.json"),
             expect.stringContaining(JSON.stringify(indexedSongs))
         );
     })

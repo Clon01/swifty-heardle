@@ -10,12 +10,16 @@ const pseudoRandomSolutions: daySolution[] = [
     [0, {  "artist": "Taylor Swift",
         "name": "All Of The Girls You Loved Before",
         "youtubeId": "HO-31CVnLes",}],
-    [10, {"artist": "Taylor Swift",
-        "name": "no body, no crime ft. HAIM",
-        "youtubeId": "IEPomqor2A8",}],
-    [100, {"artist": "Taylor Swift",
-        "name": "Lover (Official Music Video)",
-        "youtubeId": "-BjZmE2gtdo",}],
+    [10, {
+  "artist": "Taylor Swift",
+  "name": "tolerate it",
+  "youtubeId": "ukxEKY_7MOc",
+}],
+    [100, {
+  "artist": "Taylor Swift",
+  "name": "Cruel Summer",
+  "youtubeId": "ic8j13piAhQ",
+}],
 ];
 
 describe("todaySolution", () => {
